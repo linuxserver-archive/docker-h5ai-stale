@@ -1,11 +1,12 @@
 #!/usr/bin/with-contenv bash
 
 # fetch site
-[[ ! -e /config/www/h5ai/_h5ai/.htaccess ]] && \
-wget -O https://release.larsjung.de/h5ai/h5ai-0.29.0.zip && \
-mkdir -p /config/www/h5ai/ && \
-unzip h5ai-0.29.0.zip -d /config/www/h5ai/ && \
-rm h5ai-0.29.0.zip 
+if [[ ! -e /config/www/h5ai/_h5ai/.htaccess ]]; then
+mkdir -p /config/www/h5ai
+curl -o /tmp/h5ai.zip -L "https://release.larsjung.de/h5ai/h5ai-${H5AI_VER}.zip"
+unzip /tmp/h5ai.zip -d /config/www/h5ai/
+rm /tmp/h5ai.zip
+fi
 
 # permissions
 chown -R abc:abc \
