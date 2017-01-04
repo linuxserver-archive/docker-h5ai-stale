@@ -42,7 +42,7 @@ http://192.168.x.x:8080 would show you what's running INSIDE the container on po
 
 * `-p 80` - the port(s)
 * `-v /config` - config files for h5ai
-* `-v /config/www/h5ai/shared-folder` - Folder to be shared over h5ai
+* `-v /config/www/h5ai/shared-folder` - folder to be shared over h5ai
 * `-e PGID` for GroupID - see below for explanation
 * `-e PUID` for UserID - see below for explanation
 
