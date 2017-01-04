@@ -25,7 +25,7 @@ h5ai is a modern file indexer for HTTP web servers with focus on your files. Dir
 docker create \
   --name=h5ai \
   -v <path to data>:/config \
-  -v <path to shared folder>:/config/www/sharedfolder/
+  -v <path to shared folder>:/config/www/h5ai/sharedfolder/
   -e PGID=<gid> -e PUID=<uid>  \
   -p 80:80 \
   linuxserver/h5ai
@@ -61,7 +61,8 @@ In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as bel
 
 ## Setting up the application
 
-Access the webui at http://[IP]:[PORT]/h5ai/
+Access the webui at http://[IP]:[PORT]/h5ai/ 
+You can share multiple folders using `-v <path to shared folder1>:/config/www/h5ai/sharedfolder1/ -v <path to shared folder2>:/config/www/h5ai/sharedfolder2/`
 
 ## Info
 
