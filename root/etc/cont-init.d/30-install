@@ -2,7 +2,7 @@
 
 # fetch site
 [[ ! -e /config/www/h5ai/_h5ai/.htaccess ]] && \
-wget -O https://release.larsjung.de/h5ai/h5ai-0.29.0.zip && \
+wget https://release.larsjung.de/h5ai/h5ai-0.29.0.zip -O && \
 mkdir -p /config/www/h5ai/ && \
 unzip h5ai-0.29.0.zip -d /config/www/h5ai/ && \
 rm h5ai-0.29.0.zip 
