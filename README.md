@@ -79,5 +79,5 @@ You can share multiple folders using `-v <path to shared folder1>:/config/www/h5
 
 ## Versions
 
-+ **dd.MM.yy:** Initial Release.
++ **12.02.17:** Initial Release.
 
